@@ -1,10 +1,12 @@
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/views/custom_button_normal.dart';
+import 'package:bookapiflutter/app/res/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show TargetPlatform;
 
-class DialogOneButton extends StatelessWidget {
-  DialogOneButton({
+import '../custom/custom_button_normal.dart';
+
+class DialogDismissOneButton extends StatelessWidget {
+
+  DialogDismissOneButton({
     this.titleMessage,
     this.submitMessage,
     this.onOneButtonClick

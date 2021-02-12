@@ -1,0 +1,13 @@
+const String stringAppName = "BookApiFlutter";
+const String stringId = "id :";
+const String stringTitle = "title :";
+const String stringAuthor = "author :";
+const String stringPage = "page :";
+const String stringAddBook = "Add Book";
+const String stringBookPageHolder = "book\'s page";
+const String stringBookAuthorHolder = "book\'s author";
+const String stringBookTitleHolder = "book\'s title";
+const String stringBookIdHolder = "book\'s id";
+const String stringCancel = "Cancel";
+const String stringRemove = "Remove";
+const String stringUpdate = "Update";

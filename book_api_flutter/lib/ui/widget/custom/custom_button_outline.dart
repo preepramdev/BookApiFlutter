@@ -1,4 +1,4 @@
-import 'package:bookapiflutter/res/constants.dart';
+import 'package:bookapiflutter/app/res/color.dart';
 import 'package:flutter/material.dart';
 
 class CustomButtonOutline extends StatelessWidget {

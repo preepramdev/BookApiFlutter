@@ -1,11 +1,14 @@
-import 'package:bookapiflutter/api/book_api_controller.dart';
-import 'package:bookapiflutter/models/book.dart';
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/screens/update_screen.dart';
-import 'package:bookapiflutter/views/custom_button_normal.dart';
-import 'package:bookapiflutter/views/custom_button_outline.dart';
-import 'package:bookapiflutter/views/dialog_one_button.dart';
-import 'package:bookapiflutter/views/dialog_two_button.dart';
+import 'package:bookapiflutter/app/res/color.dart';
+import 'package:bookapiflutter/app/res/dimen.dart';
+import 'package:bookapiflutter/app/res/string.dart';
+import 'package:bookapiflutter/app/res/style.dart';
+import 'package:bookapiflutter/data/api/book_api_controller.dart';
+import 'package:bookapiflutter/data/model/book.dart';
+import 'package:bookapiflutter/ui/screen/update/update_screen.dart';
+import 'package:bookapiflutter/ui/widget/custom/custom_button_normal.dart';
+import 'package:bookapiflutter/ui/widget/custom/custom_button_outline.dart';
+import 'package:bookapiflutter/ui/widget/dialog/dialog_one_button.dart';
+import 'package:bookapiflutter/ui/widget/dialog/dialog_two_button.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -21,22 +24,6 @@ class _DetailScreenState extends State<DetailScreen> {
   BookApiController apiController = BookApiController();
 
   Future<Book> fetchDetail(String bookId) async {
-    /*dynamic objBody = await apiController.getBook(bookId);
-    print("getBook respond: $objBody");
-
-    if (objBody != null) {
-      var objBook = objBody;
-
-      var id = objBook['id'].toString();
-      var title = objBook['title'].toString();
-      var author = objBook['author'].toString();
-      var pages = objBook['pages'].toString();
-
-      return Book(id, title, author, pages);
-    } else {
-      return null;
-    }*/
-
     Book book;
 
     await apiController.getBook(bookId).then((value) {

@@ -1,13 +1,15 @@
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/views/custom_button_ios.dart';
-import 'package:bookapiflutter/views/custom_button_normal.dart';
-import 'package:bookapiflutter/views/custom_button_outline.dart';
+import 'package:bookapiflutter/app/res/style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show TargetPlatform;
 
-class DialogTwoButton extends StatelessWidget {
-  DialogTwoButton({
+import '../custom/custom_button_ios.dart';
+import '../custom/custom_button_normal.dart';
+import '../custom/custom_button_outline.dart';
+
+class DialogDismissTwoButton extends StatelessWidget {
+
+  DialogDismissTwoButton({
     this.titleMessage,
     this.positiveSubmitMessage,
     this.negativeSubmitMessage,

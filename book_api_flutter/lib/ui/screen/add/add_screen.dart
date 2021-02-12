@@ -1,11 +1,12 @@
-import 'package:bookapiflutter/api/book_api_controller.dart';
-import 'package:bookapiflutter/models/book.dart';
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/views/dialog_one_button.dart';
-import 'package:bookapiflutter/views/dialog_two_button.dart';
-import 'package:bookapiflutter/views/custom_button_normal.dart';
-import 'package:bookapiflutter/views/custom_textField.dart';
-import 'package:bookapiflutter/views/custom_button_outline.dart';
+import 'package:bookapiflutter/app/res/color.dart';
+import 'package:bookapiflutter/app/res/string.dart';
+import 'package:bookapiflutter/data/api/book_api_controller.dart';
+import 'package:bookapiflutter/data/model/book.dart';
+import 'package:bookapiflutter/ui/widget/custom/custom_button_normal.dart';
+import 'package:bookapiflutter/ui/widget/custom/custom_button_outline.dart';
+import 'package:bookapiflutter/ui/widget/custom/custom_textField.dart';
+import 'package:bookapiflutter/ui/widget/dialog/dialog_one_button.dart';
+import 'package:bookapiflutter/ui/widget/dialog/dialog_two_button.dart';
 import 'package:flutter/material.dart';
 
 class AddScreen extends StatefulWidget {

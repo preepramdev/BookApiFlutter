@@ -1,13 +1,12 @@
-import 'package:bookapiflutter/api/book_api_controller.dart';
-import 'package:bookapiflutter/models/book.dart';
-import 'package:bookapiflutter/screens/add_screen.dart';
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/utils/my_util.dart';
-import 'package:bookapiflutter/views/item_list_book.dart';
+import 'package:bookapiflutter/app/res/string.dart';
+import 'package:bookapiflutter/data/api/book_api_controller.dart';
+import 'package:bookapiflutter/data/model/book.dart';
+import 'package:bookapiflutter/ui/screen/add/add_screen.dart';
+import 'package:bookapiflutter/ui/screen/main/widget_list/item_list_book.dart';
 import 'package:flutter/material.dart';
 import 'package:page_life_cycle/page_life_cycle.dart';
 
-import 'detail_screen.dart';
+import '../detail/detail_screen.dart';
 
 class MainScreen extends StatefulWidget {
   static const String id = "main_screen";
@@ -23,7 +22,7 @@ class _MainScreenState extends State<MainScreen> with PageLifeCycle {
   @override
   void initState() {
     super.initState();
-    MyUtil.logger().i('MainScreen initState');
+    print('MainScreen initState');
 
     fetchApi();
   }
@@ -31,7 +30,7 @@ class _MainScreenState extends State<MainScreen> with PageLifeCycle {
   @override
   void onShow() {
     super.onShow();
-    MyUtil.logger().i('PageLifeCycle onShow');
+    print('PageLifeCycle onShow');
 
     fetchApi();
   }
@@ -39,19 +38,19 @@ class _MainScreenState extends State<MainScreen> with PageLifeCycle {
   @override
   void onHide() {
     super.onHide();
-    MyUtil.logger().i('PageLifeCycle onHide');
+    print('PageLifeCycle onHide');
   }
 
   @override
   void onAppForeground() {
     super.onAppForeground();
-    MyUtil.logger().i('PageLifeCycle onAppForeground');
+    print('PageLifeCycle onAppForeground');
   }
 
   @override
   void onAppBackground() {
     super.onAppBackground();
-    MyUtil.logger().i('PageLifeCycle onAppBackground');
+    print('PageLifeCycle onAppBackground');
   }
 
   void fetchApi() async {

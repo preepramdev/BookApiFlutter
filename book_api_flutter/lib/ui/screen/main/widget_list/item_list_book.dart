@@ -1,5 +1,8 @@
-import 'package:bookapiflutter/models/book.dart';
-import 'package:bookapiflutter/res/constants.dart';
+import 'package:bookapiflutter/app/res/color.dart';
+import 'package:bookapiflutter/app/res/dimen.dart';
+import 'package:bookapiflutter/app/res/string.dart';
+import 'package:bookapiflutter/app/res/style.dart';
+import 'package:bookapiflutter/data/model/book.dart';
 import 'package:flutter/material.dart';
 
 class BookItem extends StatelessWidget {

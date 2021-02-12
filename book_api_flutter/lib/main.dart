@@ -1,11 +1,12 @@
-import 'package:bookapiflutter/screens/add_screen.dart';
-import 'package:bookapiflutter/screens/detail_screen.dart';
-import 'package:bookapiflutter/screens/update_screen.dart';
-import 'package:bookapiflutter/res/constants.dart';
-import 'package:bookapiflutter/screens/main_screen.dart';
+import 'package:bookapiflutter/ui/screen/add/add_screen.dart';
+import 'package:bookapiflutter/ui/screen/detail/detail_screen.dart';
+import 'package:bookapiflutter/ui/screen/main/main_screen.dart';
+import 'package:bookapiflutter/ui/screen/update/update_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_life_cycle/page_life_cycle.dart'
     show PageNavigatorObserver;
+
+import 'app/res/color.dart';
 
 void main() => runApp(MyApp());
 

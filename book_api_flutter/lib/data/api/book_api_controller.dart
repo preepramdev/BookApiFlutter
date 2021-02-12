@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:bookapiflutter/models/book.dart';
+import 'package:bookapiflutter/data/model/book.dart';
 
 import 'book_api_url.dart' as url;
 import 'http_status.dart' as status;
